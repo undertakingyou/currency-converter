@@ -25,7 +25,6 @@ export async function POST(request: Request): Promise<Response> {
 
 export async function GET(request: Request): Promise<Response> {
     const results = await listFromDb()
-    console.log('GET DB results', results)
 
     return new Response(JSON.stringify({ results, status: 'ok' }), { status: 200 })
 

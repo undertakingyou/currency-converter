@@ -14,8 +14,6 @@ export default function Home() {
     },
   })
 
-  console.log('Data', data);
-
   return (
     <ConvertContext value={{ dataRefetch: refetch }}>
       <div className="flex flex-col gap-8">
